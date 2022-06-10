@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(255, 255, 255)
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+}
+
+.option {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: 100ms;
+}
+
+.option:hover {
+    transform: scale(1.2);
+}
+
+.results {
+    margin-top: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.score {
+    margin-left:  .1rem;
+    font-size: .8rem;
+    color: rgb(38, 41, 251);
+}
+
+.score-selection {
+    opacity: .5;
+}
+
+.score-selection.winner {
+    opacity: 1;
+    font-size: 1.5rem;
+
+}
